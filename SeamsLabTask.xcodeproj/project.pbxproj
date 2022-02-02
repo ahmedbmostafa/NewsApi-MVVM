@@ -1,0 +1,1216 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0984476B8D2CD27723DDE9EE /* Pods_SeamsLabTask_SeamsLabTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CD4E441947BFA272AED84D /* Pods_SeamsLabTask_SeamsLabTaskUITests.framework */; };
+		143FC079C447F6FFCBBE3AAD /* Pods_SeamsLabTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E152C51664B097C10CA7FC /* Pods_SeamsLabTask.framework */; };
+		2C0C787D27AACA46007D027D /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C787C27AACA46007D027D /* ToastManager.swift */; };
+		2C0C788B27AADC23007D027D /* NewsBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C788A27AADC23007D027D /* NewsBuilderTests.swift */; };
+		2C0C788E27AADD0A007D027D /* MockNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C788D27AADD0A007D027D /* MockNewsViewModel.swift */; };
+		2C0C789127AADE65007D027D /* NewsStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C789027AADE65007D027D /* NewsStub.swift */; };
+		2C0C789327AAE05F007D027D /* NewsVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C789227AAE05F007D027D /* NewsVCTests.swift */; };
+		2C0C789727AAE129007D027D /* ArticleBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C789627AAE129007D027D /* ArticleBuilderTests.swift */; };
+		2C15A96C27A8553800FA49B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A96B27A8553800FA49B0 /* AppDelegate.swift */; };
+		2C15A96E27A8553800FA49B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A96D27A8553800FA49B0 /* SceneDelegate.swift */; };
+		2C15A97027A8553800FA49B0 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A96F27A8553800FA49B0 /* NewsVC.swift */; };
+		2C15A97327A8553800FA49B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C15A97127A8553800FA49B0 /* Main.storyboard */; };
+		2C15A97627A8553800FA49B0 /* SeamsLabTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A97427A8553800FA49B0 /* SeamsLabTask.xcdatamodeld */; };
+		2C15A97827A8553B00FA49B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C15A97727A8553B00FA49B0 /* Assets.xcassets */; };
+		2C15A97B27A8553B00FA49B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C15A97927A8553B00FA49B0 /* LaunchScreen.storyboard */; };
+		2C15A99027A8553C00FA49B0 /* SeamsLabTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A98F27A8553C00FA49B0 /* SeamsLabTaskUITests.swift */; };
+		2C15A99227A8553C00FA49B0 /* SeamsLabTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A99127A8553C00FA49B0 /* SeamsLabTaskUITestsLaunchTests.swift */; };
+		2C15A9AE27A856D200FA49B0 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9AA27A856D100FA49B0 /* EndPoint.swift */; };
+		2C15A9AF27A856D200FA49B0 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9AB27A856D200FA49B0 /* Base.swift */; };
+		2C15A9B027A856D200FA49B0 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9AC27A856D200FA49B0 /* Target.swift */; };
+		2C15A9B127A856D200FA49B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9AD27A856D200FA49B0 /* Constants.swift */; };
+		2C15A9B327A856DB00FA49B0 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9B227A856DB00FA49B0 /* Service.swift */; };
+		2C15A9B827A856FC00FA49B0 /* Montserrat-Arabic-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C15A9B427A856FC00FA49B0 /* Montserrat-Arabic-SemiBold.ttf */; };
+		2C15A9B927A856FC00FA49B0 /* Montserrat-Arabic Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C15A9B527A856FC00FA49B0 /* Montserrat-Arabic Regular.ttf */; };
+		2C15A9BA27A856FC00FA49B0 /* Montserrat-Arabic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C15A9B627A856FC00FA49B0 /* Montserrat-Arabic-Bold.ttf */; };
+		2C15A9BB27A856FC00FA49B0 /* Montserrat-Arabic-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C15A9B727A856FC00FA49B0 /* Montserrat-Arabic-Medium.ttf */; };
+		2C15A9C027A8571500FA49B0 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9BC27A8571500FA49B0 /* StoryboardHelper.swift */; };
+		2C15A9C227A8571500FA49B0 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9BE27A8571500FA49B0 /* Alert.swift */; };
+		2C15A9C327A8571500FA49B0 /* TableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9BF27A8571500FA49B0 /* TableView+Register.swift */; };
+		2C15A9C627A8572900FA49B0 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9C427A8572900FA49B0 /* ActivityIndicator.swift */; };
+		2C15A9C727A8572900FA49B0 /* View Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9C527A8572900FA49B0 /* View Ex.swift */; };
+		2C15A9C927A8573C00FA49B0 /* AppFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9C827A8573C00FA49B0 /* AppFlowManager.swift */; };
+		2C15A9D327A85C0C00FA49B0 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9D227A85C0C00FA49B0 /* NewsModel.swift */; };
+		2C15A9D527A85C8A00FA49B0 /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9D427A85C8A00FA49B0 /* ArticlesModel.swift */; };
+		2C15A9D927A8607A00FA49B0 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9D727A8607A00FA49B0 /* NewsTableViewCell.swift */; };
+		2C15A9DA27A8607A00FA49B0 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C15A9D827A8607A00FA49B0 /* NewsTableViewCell.xib */; };
+		2C15A9DC27A8638F00FA49B0 /* NewsVC+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9DB27A8638F00FA49B0 /* NewsVC+Ex.swift */; };
+		2C15A9DF27A864F200FA49B0 /* NewsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9DE27A864F200FA49B0 /* NewsDataProvider.swift */; };
+		2C15A9E127A8691700FA49B0 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9E027A8691700FA49B0 /* NewsViewModel.swift */; };
+		2C15A9E327A86AC300FA49B0 /* NewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9E227A86AC300FA49B0 /* NewsCoordinator.swift */; };
+		2C15A9E527A86B7700FA49B0 /* NewsTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9E427A86B7700FA49B0 /* NewsTableViewCellViewModel.swift */; };
+		2C15A9E727A8795700FA49B0 /* ArticleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A9E627A8795700FA49B0 /* ArticleVC.swift */; };
+		2C1913B127AAF9CD001A4A1D /* MockNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1913B027AAF9CD001A4A1D /* MockNewsVC.swift */; };
+		2C1913B327AAFA31001A4A1D /* MockNewsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1913B227AAFA31001A4A1D /* MockNewsDataProvider.swift */; };
+		2C1913B527AAFAB7001A4A1D /* NewsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1913B427AAFAB7001A4A1D /* NewsViewModelTests.swift */; };
+		2C1913B827AAFD8A001A4A1D /* MockArticleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1913B727AAFD8A001A4A1D /* MockArticleVC.swift */; };
+		2C1913BA27AAFE6F001A4A1D /* ArticleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1913B927AAFE6E001A4A1D /* ArticleViewModelTests.swift */; };
+		2C48EFA927AA7E8E0002FD56 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48EFA827AA7E8E0002FD56 /* String+Ex.swift */; };
+		2C48EFAB27AA83DA0002FD56 /* Button+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48EFAA27AA83DA0002FD56 /* Button+Ex.swift */; };
+		2C48EFAD27AA864C0002FD56 /* TextField+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48EFAC27AA864C0002FD56 /* TextField+Ex.swift */; };
+		2CFAF1A927A8A2D3002463AC /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFAF1A827A8A2D3002463AC /* ArticleViewModel.swift */; };
+		3B5C05063A8A3A18A98D8976 /* Pods_SeamsLabTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1B2ADBA5CBB5289174A7AE /* Pods_SeamsLabTaskTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C15A98227A8553C00FA49B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C15A96027A8553700FA49B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C15A96727A8553800FA49B0;
+			remoteInfo = SeamsLabTask;
+		};
+		2C15A98C27A8553C00FA49B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C15A96027A8553700FA49B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C15A96727A8553800FA49B0;
+			remoteInfo = SeamsLabTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CA9CE5F6AA402894EA6A4EE /* Pods-SeamsLabTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeamsLabTask.release.xcconfig"; path = "Target Support Files/Pods-SeamsLabTask/Pods-SeamsLabTask.release.xcconfig"; sourceTree = "<group>"; };
+		2C0C787C27AACA46007D027D /* ToastManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
+		2C0C788A27AADC23007D027D /* NewsBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBuilderTests.swift; sourceTree = "<group>"; };
+		2C0C788D27AADD0A007D027D /* MockNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsViewModel.swift; sourceTree = "<group>"; };
+		2C0C789027AADE65007D027D /* NewsStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStub.swift; sourceTree = "<group>"; };
+		2C0C789227AAE05F007D027D /* NewsVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVCTests.swift; sourceTree = "<group>"; };
+		2C0C789627AAE129007D027D /* ArticleBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleBuilderTests.swift; sourceTree = "<group>"; };
+		2C15A96827A8553800FA49B0 /* SeamsLabTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeamsLabTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C15A96B27A8553800FA49B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C15A96D27A8553800FA49B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2C15A96F27A8553800FA49B0 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		2C15A97227A8553800FA49B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C15A97527A8553800FA49B0 /* SeamsLabTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeamsLabTask.xcdatamodel; sourceTree = "<group>"; };
+		2C15A97727A8553B00FA49B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C15A97A27A8553B00FA49B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C15A97C27A8553B00FA49B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C15A98127A8553C00FA49B0 /* SeamsLabTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeamsLabTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C15A98B27A8553C00FA49B0 /* SeamsLabTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeamsLabTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C15A98F27A8553C00FA49B0 /* SeamsLabTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeamsLabTaskUITests.swift; sourceTree = "<group>"; };
+		2C15A99127A8553C00FA49B0 /* SeamsLabTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeamsLabTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2C15A9AA27A856D100FA49B0 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		2C15A9AB27A856D200FA49B0 /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		2C15A9AC27A856D200FA49B0 /* Target.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		2C15A9AD27A856D200FA49B0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2C15A9B227A856DB00FA49B0 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2C15A9B427A856FC00FA49B0 /* Montserrat-Arabic-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Arabic-SemiBold.ttf"; sourceTree = "<group>"; };
+		2C15A9B527A856FC00FA49B0 /* Montserrat-Arabic Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Arabic Regular.ttf"; sourceTree = "<group>"; };
+		2C15A9B627A856FC00FA49B0 /* Montserrat-Arabic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Arabic-Bold.ttf"; sourceTree = "<group>"; };
+		2C15A9B727A856FC00FA49B0 /* Montserrat-Arabic-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Arabic-Medium.ttf"; sourceTree = "<group>"; };
+		2C15A9BC27A8571500FA49B0 /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		2C15A9BE27A8571500FA49B0 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		2C15A9BF27A8571500FA49B0 /* TableView+Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+Register.swift"; sourceTree = "<group>"; };
+		2C15A9C427A8572900FA49B0 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		2C15A9C527A8572900FA49B0 /* View Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View Ex.swift"; sourceTree = "<group>"; };
+		2C15A9C827A8573C00FA49B0 /* AppFlowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlowManager.swift; sourceTree = "<group>"; };
+		2C15A9D227A85C0C00FA49B0 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		2C15A9D427A85C8A00FA49B0 /* ArticlesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
+		2C15A9D727A8607A00FA49B0 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		2C15A9D827A8607A00FA49B0 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		2C15A9DB27A8638F00FA49B0 /* NewsVC+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsVC+Ex.swift"; sourceTree = "<group>"; };
+		2C15A9DE27A864F200FA49B0 /* NewsDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDataProvider.swift; sourceTree = "<group>"; };
+		2C15A9E027A8691700FA49B0 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		2C15A9E227A86AC300FA49B0 /* NewsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCoordinator.swift; sourceTree = "<group>"; };
+		2C15A9E427A86B7700FA49B0 /* NewsTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		2C15A9E627A8795700FA49B0 /* ArticleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleVC.swift; sourceTree = "<group>"; };
+		2C1913B027AAF9CD001A4A1D /* MockNewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsVC.swift; sourceTree = "<group>"; };
+		2C1913B227AAFA31001A4A1D /* MockNewsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsDataProvider.swift; sourceTree = "<group>"; };
+		2C1913B427AAFAB7001A4A1D /* NewsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModelTests.swift; sourceTree = "<group>"; };
+		2C1913B727AAFD8A001A4A1D /* MockArticleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticleVC.swift; sourceTree = "<group>"; };
+		2C1913B927AAFE6E001A4A1D /* ArticleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModelTests.swift; sourceTree = "<group>"; };
+		2C48EFA827AA7E8E0002FD56 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		2C48EFAA27AA83DA0002FD56 /* Button+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Ex.swift"; sourceTree = "<group>"; };
+		2C48EFAC27AA864C0002FD56 /* TextField+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Ex.swift"; sourceTree = "<group>"; };
+		2CFAF1A827A8A2D3002463AC /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		3D1B2ADBA5CBB5289174A7AE /* Pods_SeamsLabTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeamsLabTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4787DA9F2E03DB1BC069AD1C /* Pods-SeamsLabTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeamsLabTask.debug.xcconfig"; path = "Target Support Files/Pods-SeamsLabTask/Pods-SeamsLabTask.debug.xcconfig"; sourceTree = "<group>"; };
+		AE0FEE90FE919B39CDB735ED /* Pods-SeamsLabTask-SeamsLabTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeamsLabTask-SeamsLabTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-SeamsLabTask-SeamsLabTaskUITests/Pods-SeamsLabTask-SeamsLabTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B1E152C51664B097C10CA7FC /* Pods_SeamsLabTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeamsLabTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFCB6B15BB644A4189AD124C /* Pods-SeamsLabTask-SeamsLabTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeamsLabTask-SeamsLabTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-SeamsLabTask-SeamsLabTaskUITests/Pods-SeamsLabTask-SeamsLabTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D06360B829534862A9794747 /* Pods-SeamsLabTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeamsLabTaskTests.release.xcconfig"; path = "Target Support Files/Pods-SeamsLabTaskTests/Pods-SeamsLabTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		D2CD4E441947BFA272AED84D /* Pods_SeamsLabTask_SeamsLabTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeamsLabTask_SeamsLabTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D727C03A6BB609E76337A2D1 /* Pods-SeamsLabTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeamsLabTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-SeamsLabTaskTests/Pods-SeamsLabTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C15A96527A8553800FA49B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143FC079C447F6FFCBBE3AAD /* Pods_SeamsLabTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C15A97E27A8553C00FA49B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5C05063A8A3A18A98D8976 /* Pods_SeamsLabTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C15A98827A8553C00FA49B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0984476B8D2CD27723DDE9EE /* Pods_SeamsLabTask_SeamsLabTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		021FF73A4F0BF9A365466CC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1E152C51664B097C10CA7FC /* Pods_SeamsLabTask.framework */,
+				D2CD4E441947BFA272AED84D /* Pods_SeamsLabTask_SeamsLabTaskUITests.framework */,
+				3D1B2ADBA5CBB5289174A7AE /* Pods_SeamsLabTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C0C787E27AACD5C007D027D /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A97427A8553800FA49B0 /* SeamsLabTask.xcdatamodeld */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		2C0C788427AADB65007D027D /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C1913AF27AAF9AF001A4A1D /* MockClasses */,
+				2C1913B427AAFAB7001A4A1D /* NewsViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		2C0C788527AADB72007D027D /* ViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C0C788C27AADCF1007D027D /* MockClasses */,
+				2C0C789227AAE05F007D027D /* NewsVCTests.swift */,
+			);
+			path = ViewTests;
+			sourceTree = "<group>";
+		};
+		2C0C788627AADB80007D027D /* BuilderTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C0C788A27AADC23007D027D /* NewsBuilderTests.swift */,
+			);
+			path = BuilderTests;
+			sourceTree = "<group>";
+		};
+		2C0C788727AADB94007D027D /* NewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C0C788627AADB80007D027D /* BuilderTests */,
+				2C0C788527AADB72007D027D /* ViewTests */,
+				2C0C788427AADB65007D027D /* ViewModelTests */,
+			);
+			path = NewsTests;
+			sourceTree = "<group>";
+		};
+		2C0C788827AADBB2007D027D /* ArticleTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C0C789427AAE0F4007D027D /* BuilderTests */,
+				2C0C789527AAE0FE007D027D /* ViewModelTests */,
+			);
+			path = ArticleTests;
+			sourceTree = "<group>";
+		};
+		2C0C788C27AADCF1007D027D /* MockClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2C0C788D27AADD0A007D027D /* MockNewsViewModel.swift */,
+			);
+			path = MockClasses;
+			sourceTree = "<group>";
+		};
+		2C0C788F27AADE40007D027D /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				2C0C789027AADE65007D027D /* NewsStub.swift */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		2C0C789427AAE0F4007D027D /* BuilderTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C0C789627AAE129007D027D /* ArticleBuilderTests.swift */,
+			);
+			path = BuilderTests;
+			sourceTree = "<group>";
+		};
+		2C0C789527AAE0FE007D027D /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C1913B627AAFD6C001A4A1D /* MockClasses */,
+				2C1913B927AAFE6E001A4A1D /* ArticleViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		2C15A95F27A8553700FA49B0 = {
+			isa = PBXGroup;
+			children = (
+				2C15A96A27A8553800FA49B0 /* SeamsLabTask */,
+				2C15A98427A8553C00FA49B0 /* SeamsLabTaskTests */,
+				2C15A98E27A8553C00FA49B0 /* SeamsLabTaskUITests */,
+				2C15A96927A8553800FA49B0 /* Products */,
+				2EF5DB4168F2204847E40F51 /* Pods */,
+				021FF73A4F0BF9A365466CC3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C15A96927A8553800FA49B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A96827A8553800FA49B0 /* SeamsLabTask.app */,
+				2C15A98127A8553C00FA49B0 /* SeamsLabTaskTests.xctest */,
+				2C15A98B27A8553C00FA49B0 /* SeamsLabTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C15A96A27A8553800FA49B0 /* SeamsLabTask */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9A327A855CC00FA49B0 /* SupportingFiles */,
+				2C15A99E27A8558300FA49B0 /* AppCore */,
+				2C15A9A627A8564C00FA49B0 /* Screens */,
+				2C15A9A727A8565400FA49B0 /* Modules */,
+				2C15A9A527A8564400FA49B0 /* Services */,
+			);
+			path = SeamsLabTask;
+			sourceTree = "<group>";
+		};
+		2C15A98427A8553C00FA49B0 /* SeamsLabTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C0C788727AADB94007D027D /* NewsTests */,
+				2C0C788827AADBB2007D027D /* ArticleTests */,
+				2C0C788F27AADE40007D027D /* Stub */,
+			);
+			path = SeamsLabTaskTests;
+			sourceTree = "<group>";
+		};
+		2C15A98E27A8553C00FA49B0 /* SeamsLabTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A98F27A8553C00FA49B0 /* SeamsLabTaskUITests.swift */,
+				2C15A99127A8553C00FA49B0 /* SeamsLabTaskUITestsLaunchTests.swift */,
+			);
+			path = SeamsLabTaskUITests;
+			sourceTree = "<group>";
+		};
+		2C15A99E27A8558300FA49B0 /* AppCore */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9A227A855B500FA49B0 /* Fonts */,
+				2C15A9A127A855A900FA49B0 /* Managers */,
+				2C15A9A027A855A000FA49B0 /* Helpers */,
+				2C15A99F27A8559700FA49B0 /* Extensions */,
+			);
+			path = AppCore;
+			sourceTree = "<group>";
+		};
+		2C15A99F27A8559700FA49B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9BE27A8571500FA49B0 /* Alert.swift */,
+				2C15A9C527A8572900FA49B0 /* View Ex.swift */,
+				2C48EFA827AA7E8E0002FD56 /* String+Ex.swift */,
+				2C48EFAA27AA83DA0002FD56 /* Button+Ex.swift */,
+				2C15A9BC27A8571500FA49B0 /* StoryboardHelper.swift */,
+				2C15A9BF27A8571500FA49B0 /* TableView+Register.swift */,
+				2C48EFAC27AA864C0002FD56 /* TextField+Ex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C15A9A027A855A000FA49B0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2C0C787C27AACA46007D027D /* ToastManager.swift */,
+				2C15A9C427A8572900FA49B0 /* ActivityIndicator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2C15A9A127A855A900FA49B0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9C827A8573C00FA49B0 /* AppFlowManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2C15A9A227A855B500FA49B0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9B527A856FC00FA49B0 /* Montserrat-Arabic Regular.ttf */,
+				2C15A9B627A856FC00FA49B0 /* Montserrat-Arabic-Bold.ttf */,
+				2C15A9B727A856FC00FA49B0 /* Montserrat-Arabic-Medium.ttf */,
+				2C15A9B427A856FC00FA49B0 /* Montserrat-Arabic-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2C15A9A327A855CC00FA49B0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A96B27A8553800FA49B0 /* AppDelegate.swift */,
+				2C15A96D27A8553800FA49B0 /* SceneDelegate.swift */,
+				2C15A97C27A8553B00FA49B0 /* Info.plist */,
+				2C15A9A427A855EA00FA49B0 /* Resources */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2C15A9A427A855EA00FA49B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A97727A8553B00FA49B0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C15A9A527A8564400FA49B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9A827A8566800FA49B0 /* Remote */,
+				2C0C787E27AACD5C007D027D /* Local */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2C15A9A627A8564C00FA49B0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A97127A8553800FA49B0 /* Main.storyboard */,
+				2C15A97927A8553B00FA49B0 /* LaunchScreen.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2C15A9A727A8565400FA49B0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9CA27A8576100FA49B0 /* News */,
+				2C15A9CB27A8577700FA49B0 /* Article */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2C15A9A827A8566800FA49B0 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9B227A856DB00FA49B0 /* Service.swift */,
+				2C15A9A927A8568100FA49B0 /* Networking */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		2C15A9A927A8568100FA49B0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9AD27A856D200FA49B0 /* Constants.swift */,
+				2C15A9AC27A856D200FA49B0 /* Target.swift */,
+				2C15A9AA27A856D100FA49B0 /* EndPoint.swift */,
+				2C15A9AB27A856D200FA49B0 /* Base.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2C15A9CA27A8576100FA49B0 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9CC27A857D100FA49B0 /* Model */,
+				2C15A9CD27A857D700FA49B0 /* View */,
+				2C15A9CE27A857DE00FA49B0 /* ViewModel */,
+				2C15A9CF27A857F200FA49B0 /* Coordinator */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		2C15A9CB27A8577700FA49B0 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9D127A8581F00FA49B0 /* View */,
+				2C15A9D027A8581600FA49B0 /* ViewModel */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		2C15A9CC27A857D100FA49B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9DD27A864D700FA49B0 /* DataProvider */,
+				2C15A9D227A85C0C00FA49B0 /* NewsModel.swift */,
+				2C15A9D427A85C8A00FA49B0 /* ArticlesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C15A9CD27A857D700FA49B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9D627A8605700FA49B0 /* TableViewCell */,
+				2C15A96F27A8553800FA49B0 /* NewsVC.swift */,
+				2C15A9DB27A8638F00FA49B0 /* NewsVC+Ex.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C15A9CE27A857DE00FA49B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9E027A8691700FA49B0 /* NewsViewModel.swift */,
+				2C15A9E427A86B7700FA49B0 /* NewsTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2C15A9CF27A857F200FA49B0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9E227A86AC300FA49B0 /* NewsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2C15A9D027A8581600FA49B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2CFAF1A827A8A2D3002463AC /* ArticleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2C15A9D127A8581F00FA49B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9E627A8795700FA49B0 /* ArticleVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C15A9D627A8605700FA49B0 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9D727A8607A00FA49B0 /* NewsTableViewCell.swift */,
+				2C15A9D827A8607A00FA49B0 /* NewsTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		2C15A9DD27A864D700FA49B0 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A9DE27A864F200FA49B0 /* NewsDataProvider.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		2C1913AF27AAF9AF001A4A1D /* MockClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2C1913B027AAF9CD001A4A1D /* MockNewsVC.swift */,
+				2C1913B227AAFA31001A4A1D /* MockNewsDataProvider.swift */,
+			);
+			path = MockClasses;
+			sourceTree = "<group>";
+		};
+		2C1913B627AAFD6C001A4A1D /* MockClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2C1913B727AAFD8A001A4A1D /* MockArticleVC.swift */,
+			);
+			path = MockClasses;
+			sourceTree = "<group>";
+		};
+		2EF5DB4168F2204847E40F51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4787DA9F2E03DB1BC069AD1C /* Pods-SeamsLabTask.debug.xcconfig */,
+				1CA9CE5F6AA402894EA6A4EE /* Pods-SeamsLabTask.release.xcconfig */,
+				CFCB6B15BB644A4189AD124C /* Pods-SeamsLabTask-SeamsLabTaskUITests.debug.xcconfig */,
+				AE0FEE90FE919B39CDB735ED /* Pods-SeamsLabTask-SeamsLabTaskUITests.release.xcconfig */,
+				D727C03A6BB609E76337A2D1 /* Pods-SeamsLabTaskTests.debug.xcconfig */,
+				D06360B829534862A9794747 /* Pods-SeamsLabTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C15A96727A8553800FA49B0 /* SeamsLabTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C15A99527A8553C00FA49B0 /* Build configuration list for PBXNativeTarget "SeamsLabTask" */;
+			buildPhases = (
+				071F71D0D6C256F22727AA38 /* [CP] Check Pods Manifest.lock */,
+				2C15A96427A8553800FA49B0 /* Sources */,
+				2C15A96527A8553800FA49B0 /* Frameworks */,
+				2C15A96627A8553800FA49B0 /* Resources */,
+				FAEB9819C44534465466958E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeamsLabTask;
+			productName = SeamsLabTask;
+			productReference = 2C15A96827A8553800FA49B0 /* SeamsLabTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C15A98027A8553C00FA49B0 /* SeamsLabTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C15A99827A8553C00FA49B0 /* Build configuration list for PBXNativeTarget "SeamsLabTaskTests" */;
+			buildPhases = (
+				8E724D2066032CE55732DABA /* [CP] Check Pods Manifest.lock */,
+				2C15A97D27A8553C00FA49B0 /* Sources */,
+				2C15A97E27A8553C00FA49B0 /* Frameworks */,
+				2C15A97F27A8553C00FA49B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C15A98327A8553C00FA49B0 /* PBXTargetDependency */,
+			);
+			name = SeamsLabTaskTests;
+			productName = SeamsLabTaskTests;
+			productReference = 2C15A98127A8553C00FA49B0 /* SeamsLabTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C15A98A27A8553C00FA49B0 /* SeamsLabTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C15A99B27A8553C00FA49B0 /* Build configuration list for PBXNativeTarget "SeamsLabTaskUITests" */;
+			buildPhases = (
+				A514EE96BC0377E65FF4B974 /* [CP] Check Pods Manifest.lock */,
+				2C15A98727A8553C00FA49B0 /* Sources */,
+				2C15A98827A8553C00FA49B0 /* Frameworks */,
+				2C15A98927A8553C00FA49B0 /* Resources */,
+				1E312DE900CC63C55D934706 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C15A98D27A8553C00FA49B0 /* PBXTargetDependency */,
+			);
+			name = SeamsLabTaskUITests;
+			productName = SeamsLabTaskUITests;
+			productReference = 2C15A98B27A8553C00FA49B0 /* SeamsLabTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C15A96027A8553700FA49B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2C15A96727A8553800FA49B0 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					2C15A98027A8553C00FA49B0 = {
+						CreatedOnToolsVersion = 13.2;
+						LastSwiftMigration = 1320;
+						TestTargetID = 2C15A96727A8553800FA49B0;
+					};
+					2C15A98A27A8553C00FA49B0 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 2C15A96727A8553800FA49B0;
+					};
+				};
+			};
+			buildConfigurationList = 2C15A96327A8553700FA49B0 /* Build configuration list for PBXProject "SeamsLabTask" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C15A95F27A8553700FA49B0;
+			productRefGroup = 2C15A96927A8553800FA49B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C15A96727A8553800FA49B0 /* SeamsLabTask */,
+				2C15A98027A8553C00FA49B0 /* SeamsLabTaskTests */,
+				2C15A98A27A8553C00FA49B0 /* SeamsLabTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C15A96627A8553800FA49B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C15A9BA27A856FC00FA49B0 /* Montserrat-Arabic-Bold.ttf in Resources */,
+				2C15A9B827A856FC00FA49B0 /* Montserrat-Arabic-SemiBold.ttf in Resources */,
+				2C15A97B27A8553B00FA49B0 /* LaunchScreen.storyboard in Resources */,
+				2C15A97827A8553B00FA49B0 /* Assets.xcassets in Resources */,
+				2C15A97327A8553800FA49B0 /* Main.storyboard in Resources */,
+				2C15A9BB27A856FC00FA49B0 /* Montserrat-Arabic-Medium.ttf in Resources */,
+				2C15A9DA27A8607A00FA49B0 /* NewsTableViewCell.xib in Resources */,
+				2C15A9B927A856FC00FA49B0 /* Montserrat-Arabic Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C15A97F27A8553C00FA49B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C15A98927A8553C00FA49B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		071F71D0D6C256F22727AA38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeamsLabTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E312DE900CC63C55D934706 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeamsLabTask-SeamsLabTaskUITests/Pods-SeamsLabTask-SeamsLabTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeamsLabTask-SeamsLabTaskUITests/Pods-SeamsLabTask-SeamsLabTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeamsLabTask-SeamsLabTaskUITests/Pods-SeamsLabTask-SeamsLabTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E724D2066032CE55732DABA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeamsLabTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A514EE96BC0377E65FF4B974 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeamsLabTask-SeamsLabTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAEB9819C44534465466958E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeamsLabTask/Pods-SeamsLabTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeamsLabTask/Pods-SeamsLabTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeamsLabTask/Pods-SeamsLabTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C15A96427A8553800FA49B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C15A9AF27A856D200FA49B0 /* Base.swift in Sources */,
+				2C15A97627A8553800FA49B0 /* SeamsLabTask.xcdatamodeld in Sources */,
+				2C15A9D527A85C8A00FA49B0 /* ArticlesModel.swift in Sources */,
+				2C15A9C927A8573C00FA49B0 /* AppFlowManager.swift in Sources */,
+				2C15A9B027A856D200FA49B0 /* Target.swift in Sources */,
+				2C15A9C627A8572900FA49B0 /* ActivityIndicator.swift in Sources */,
+				2C48EFAD27AA864C0002FD56 /* TextField+Ex.swift in Sources */,
+				2C15A97027A8553800FA49B0 /* NewsVC.swift in Sources */,
+				2C48EFAB27AA83DA0002FD56 /* Button+Ex.swift in Sources */,
+				2C15A9DF27A864F200FA49B0 /* NewsDataProvider.swift in Sources */,
+				2C15A9AE27A856D200FA49B0 /* EndPoint.swift in Sources */,
+				2C15A9C227A8571500FA49B0 /* Alert.swift in Sources */,
+				2C15A9B327A856DB00FA49B0 /* Service.swift in Sources */,
+				2C48EFA927AA7E8E0002FD56 /* String+Ex.swift in Sources */,
+				2C15A96C27A8553800FA49B0 /* AppDelegate.swift in Sources */,
+				2C15A9DC27A8638F00FA49B0 /* NewsVC+Ex.swift in Sources */,
+				2C15A9E727A8795700FA49B0 /* ArticleVC.swift in Sources */,
+				2CFAF1A927A8A2D3002463AC /* ArticleViewModel.swift in Sources */,
+				2C15A96E27A8553800FA49B0 /* SceneDelegate.swift in Sources */,
+				2C15A9C027A8571500FA49B0 /* StoryboardHelper.swift in Sources */,
+				2C15A9D327A85C0C00FA49B0 /* NewsModel.swift in Sources */,
+				2C0C787D27AACA46007D027D /* ToastManager.swift in Sources */,
+				2C15A9E127A8691700FA49B0 /* NewsViewModel.swift in Sources */,
+				2C15A9B127A856D200FA49B0 /* Constants.swift in Sources */,
+				2C15A9C727A8572900FA49B0 /* View Ex.swift in Sources */,
+				2C15A9C327A8571500FA49B0 /* TableView+Register.swift in Sources */,
+				2C15A9D927A8607A00FA49B0 /* NewsTableViewCell.swift in Sources */,
+				2C15A9E527A86B7700FA49B0 /* NewsTableViewCellViewModel.swift in Sources */,
+				2C15A9E327A86AC300FA49B0 /* NewsCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C15A97D27A8553C00FA49B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0C789727AAE129007D027D /* ArticleBuilderTests.swift in Sources */,
+				2C0C788B27AADC23007D027D /* NewsBuilderTests.swift in Sources */,
+				2C1913B327AAFA31001A4A1D /* MockNewsDataProvider.swift in Sources */,
+				2C0C789327AAE05F007D027D /* NewsVCTests.swift in Sources */,
+				2C0C789127AADE65007D027D /* NewsStub.swift in Sources */,
+				2C1913BA27AAFE6F001A4A1D /* ArticleViewModelTests.swift in Sources */,
+				2C0C788E27AADD0A007D027D /* MockNewsViewModel.swift in Sources */,
+				2C1913B827AAFD8A001A4A1D /* MockArticleVC.swift in Sources */,
+				2C1913B127AAF9CD001A4A1D /* MockNewsVC.swift in Sources */,
+				2C1913B527AAFAB7001A4A1D /* NewsViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C15A98727A8553C00FA49B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C15A99027A8553C00FA49B0 /* SeamsLabTaskUITests.swift in Sources */,
+				2C15A99227A8553C00FA49B0 /* SeamsLabTaskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C15A98327A8553C00FA49B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C15A96727A8553800FA49B0 /* SeamsLabTask */;
+			targetProxy = 2C15A98227A8553C00FA49B0 /* PBXContainerItemProxy */;
+		};
+		2C15A98D27A8553C00FA49B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C15A96727A8553800FA49B0 /* SeamsLabTask */;
+			targetProxy = 2C15A98C27A8553C00FA49B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C15A97127A8553800FA49B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C15A97227A8553800FA49B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C15A97927A8553B00FA49B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C15A97A27A8553B00FA49B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C15A99327A8553C00FA49B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C15A99427A8553C00FA49B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C15A99627A8553C00FA49B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4787DA9F2E03DB1BC069AD1C /* Pods-SeamsLabTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SeamsLabTask/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.SeamsLabTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2C15A99727A8553C00FA49B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA9CE5F6AA402894EA6A4EE /* Pods-SeamsLabTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SeamsLabTask/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.SeamsLabTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2C15A99927A8553C00FA49B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D727C03A6BB609E76337A2D1 /* Pods-SeamsLabTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.SeamsLabTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeamsLabTask.app/SeamsLabTask";
+			};
+			name = Debug;
+		};
+		2C15A99A27A8553C00FA49B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D06360B829534862A9794747 /* Pods-SeamsLabTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.SeamsLabTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeamsLabTask.app/SeamsLabTask";
+			};
+			name = Release;
+		};
+		2C15A99C27A8553C00FA49B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFCB6B15BB644A4189AD124C /* Pods-SeamsLabTask-SeamsLabTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.SeamsLabTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SeamsLabTask;
+			};
+			name = Debug;
+		};
+		2C15A99D27A8553C00FA49B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0FEE90FE919B39CDB735ED /* Pods-SeamsLabTask-SeamsLabTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.SeamsLabTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SeamsLabTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C15A96327A8553700FA49B0 /* Build configuration list for PBXProject "SeamsLabTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C15A99327A8553C00FA49B0 /* Debug */,
+				2C15A99427A8553C00FA49B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C15A99527A8553C00FA49B0 /* Build configuration list for PBXNativeTarget "SeamsLabTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C15A99627A8553C00FA49B0 /* Debug */,
+				2C15A99727A8553C00FA49B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C15A99827A8553C00FA49B0 /* Build configuration list for PBXNativeTarget "SeamsLabTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C15A99927A8553C00FA49B0 /* Debug */,
+				2C15A99A27A8553C00FA49B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C15A99B27A8553C00FA49B0 /* Build configuration list for PBXNativeTarget "SeamsLabTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C15A99C27A8553C00FA49B0 /* Debug */,
+				2C15A99D27A8553C00FA49B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C15A97427A8553800FA49B0 /* SeamsLabTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C15A97527A8553800FA49B0 /* SeamsLabTask.xcdatamodel */,
+			);
+			currentVersion = 2C15A97527A8553800FA49B0 /* SeamsLabTask.xcdatamodel */;
+			path = SeamsLabTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2C15A96027A8553700FA49B0 /* Project object */;
+}

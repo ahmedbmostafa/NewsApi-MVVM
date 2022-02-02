@@ -1,0 +1,6 @@
+framework module Pods_SeamsLabTask_SeamsLabTaskUITests {
+  umbrella header "Pods-SeamsLabTask-SeamsLabTaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_SeamsLabTask {
+  umbrella header "Pods-SeamsLabTask-umbrella.h"
+
+  export *
+  module * { export * }
+}
